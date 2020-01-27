@@ -81,9 +81,8 @@ ul {
 }
 
 .list-item.active .link-item:after {
-  width: 1.5rem;
+  width: 1.2rem;
 }
-
 .link-item {
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -102,7 +101,6 @@ ul {
   height: 0.3rem;
   background-color: var(--color-blue);
   transition: all 0.3s ease;
-  transform-origin: left;
 }
 
 .link-item:hover {
@@ -110,13 +108,37 @@ ul {
 }
 
 .link-item:hover:after {
-  width: 1.5rem;
+  width: 1.2rem;
 }
 
 .navbar-social {
   display: flex;
+  flex: 0 0 20%;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-list {
   display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.social-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-gray-light);
+  margin-right: 1.5rem;
+}
+
+.social-list .nav-icon {
+  font-size: 1.6em;
+  color: var(--color-gray-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-list .nav-icon:hover {
+  color: var(--color-blue);
 }
