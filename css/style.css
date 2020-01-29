@@ -32,7 +32,6 @@ body {
 }
 
 body {
-  background-color: var(--color-gray-dark);
 }
 
 html {
@@ -52,71 +51,8 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 117rem;
+  max-width: 114rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin: 0 auto;
-}
-
-/* Start Header */
-.navigation {
-  background-color: var(--color-white);
-  padding: 2rem 1rem;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-list {
-  display: flex;
-}
-
-.list-item:not(:last-child) {
-  margin-right: 1.2rem;
-}
-
-.list-item.active .link-item {
-  color: var(--color-blue);
-}
-
-.list-item.active .link-item:after {
-  width: 1.5rem;
-}
-
-.link-item {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: 700;
-  padding: 1.2rem 2rem;
-  position: relative;
-}
-
-.link-item:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0.3rem;
-  background-color: var(--color-blue);
-  transition: all 0.3s ease;
-  transform-origin: left;
-}
-
-.link-item:hover {
-  color: var(--color-blue);
-}
-
-.link-item:hover:after {
-  width: 1.5rem;
-}
-
-.navbar-social {
-  display: flex;
-}
-
-.social-list {
-  display: flex;
 }
